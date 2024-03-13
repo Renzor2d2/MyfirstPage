@@ -1,0 +1,374 @@
+body {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding-top: 5.5em;
+}
+
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* cabecera */
+.header {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  color: white;
+  font-size: 1.3rem;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+}
+
+.gretting {
+  background-color: red;
+}
+
+.header-nav {
+  padding: 0 2em 0 0;
+}
+
+.header-main {
+  display: none;
+}
+
+.fa-solid-fa-heart {
+  color: white;
+  font-size: 2em;
+
+}
+
+.header-title {
+  display: none;
+}
+
+/* secciones */
+.section-1 {
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  align-items: center;
+
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-3_title {
+  align-self: flex-start;
+  padding: 1em;
+  margin: 0;
+  font-size: 40px;
+}
+
+
+
+
+/* imagenes */
+.imagen1 {
+  width: 250px;
+}
+
+.imagen2 {
+  width: 100%;
+  height: 350px;
+
+}
+
+
+
+.ul {
+  display: flex;
+  gap: 1.1em;
+
+}
+
+.acerca-de {
+  width: 450px;
+  padding: 2em;
+}
+
+
+.ul2 {
+  padding: 0;
+}
+
+/* TARJETAS */
+.cards {
+  padding: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+
+.cards-elements {
+  width: 50%;
+  padding: 1em;
+  margin: auto;
+}
+
+
+.cards-images {
+  width: 100%
+}
+
+.cards-link {
+  color: orange;
+}
+
+/* CHECKBOX */
+#check {
+  display: none;
+}
+
+.checkbtn {
+  display: none;
+  font-size: 24px;
+  float: right;
+  margin-right: 40px;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* pie de pagina */
+.footer {
+  background-color: gray;
+  padding: 2em;
+
+}
+
+.footer-title {
+  color: rgb(255, 149, 0)
+}
+
+.footer-heart {
+  position: fixed;
+  bottom: 22px;
+  right: 39px;
+  font-size: 0.7em;
+}
+
+@media (max-width:760px) {
+  .section-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ul {
+    display: none;
+  }
+
+  header a {
+    display: none;
+  }
+
+  .header-title {
+    display: block;
+  }
+
+  .acerca-de {
+    text-align: center;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (max-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+  width: 250px;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+  width: 250px;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+
+  color: #ffffff;
+  background-color: #5995da;
+
+
+  border: none;
+  border-radius: 3px;
+
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+#alertas {
+  color: red
+}
