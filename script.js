@@ -18,6 +18,7 @@ function validarFormulario() {
 		parrafo.innerHTML = "Enviado";
 	}
 	return valido;
+	s;
 }
 
 form.addEventListener("submit", (e) => {
